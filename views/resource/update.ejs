@@ -16,40 +16,102 @@
 
     <div class="container mt-3">    
         <form action="/update/<%= data._id %>" method="post" enctype="multipart/form-data">
-            
-            <input type="text" name="name" value="<%= data.name %>" class="" placeholder="name">
-            <input type="text" name="delivery" value="<%= data.delivery %>" class="" placeholder="delivery">
-            <input type="text" name="set_name" value="<%= data.set_name %>" class="" placeholder="set name">
+            <div class="row">
+                <div class="col-3">
+                    <label class="font-weight-bold"> Name </label>
+                    <input type="text" name="name" value="<%= data.name %>" class="" placeholder="name">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Delievery </label>
+                    <input type="text" name="delivery" value="<%= data.delivery %>" class="" placeholder="delivery">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Set Name </label>
+                    <input type="text" name="set_name" value="<%= data.set_name %>" class="" placeholder="set name">
+    
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Bid Strategy </label>
+                    <input type="text" name="bid_strategy" value="<%= data.bid_strategy %>" class="" placeholder="bid strategy"> 
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Budget </label>
+                    <input type="text" name="budget" value="<%= data.budget %>" class="" placeholder="budget">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Results </label>
+                    <input type="text" name="results" value="<%= data.results %>" class="" placeholder="results">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Impressions </label>
+                    <input type="text" name="impressions" value="<%= data.impressions %>" class="" placeholder="impressions">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Cost per Result </label>
+                    <input type="text" name="cost_per_result" value="<%= data.cost_per_result %>" class="" placeholder="COP">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Add to Cart </label>
+                    <input type="text" name="add_to_cart" value="<%= data.add_to_cart %>" class="" placeholder="add to cart">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Purchases </label>
+                    <input type="text" name="purchases" value="<%= data.purchases %>" class="" placeholder="purchases">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Amount Spent </label>
+                    <input type="text" name="amount_spent" value="<%= data.amount_spent %>" class="" placeholder="amount spent">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Purchase Connection Value </label>
+                    <input type="text" name="purchase_con_val" value="<%= data.purchase_con_val %>" class="" placeholder="purchase conversions value">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Purchase ROAS </label>
+                    <input type="text" name="purchase_roas" value="<%= data.purchase_roas %>" class="" placeholder="purchase ROAS">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Unique Link Click </label>
+                    <input type="text" name="unique_link_click" value="<%= data.unique_link_click %>" class="" placeholder="unique link click">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> CPC </label>
+                    <input type="text" name="cpc" value="<%= data.cpc %>" class="" placeholder="cpc">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Company Name </label>
+                    <input type="text" name="company_name" value="<%= data.company_name %>" class="" placeholder="company name">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Ship Date </label>
+                    <input type="date" name="ship_date" value="<%= data.ship_date %>" class="" placeholder="ship date">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Status </label>
+                    <input type="text" name="status" value="<%= data.status %>" class="" placeholder="status">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Type </label>
+                    <input type="text" name="type" value="<%= data.type %>" class="" placeholder="type">
+                  </div>
+                  <div class="col-3">
+                    <label class="font-weight-bold"> Image </label>
+                    <input type="file" name="blogimage" >
+                  </div>
 
-            <input type="text" name="bid_strategy" value="<%= data.bid_strategy %>" class="" placeholder="bid strategy"> 
-            <input type="text" name="budget" value="<%= data.budget %>" class="" placeholder="budget">
-            <input type="text" name="results" value="<%= data.results %>" class="" placeholder="results">
+                  <div class="col-3">
+                    <span class="font-weight-bold">Old Picture : </span><img src="/<%= data.fileinfo %>" style="width: 100px; height: 60px;" alt="photo" />
+                  </div>
+               
+            </div>
 
-            <input type="text" name="impressions" value="<%= data.impressions %>" class="" placeholder="impressions">
-            <input type="text" name="cost_per_result" value="<%= data.cost_per_result %>" class="" placeholder="COP">
-            <input type="text" name="add_to_cart" value="<%= data.add_to_cart %>" class="" placeholder="add to cart">
-
-            <input type="text" name="purchases" value="<%= data.purchases %>" class="" placeholder="purchases">
-            <input type="text" name="amount_spent" value="<%= data.amount_spent %>" class="" placeholder="amount spent">
-            <input type="text" name="purchase_con_val" value="<%= data.purchase_con_val %>" class="" placeholder="purchase conversions value">
-
-            <input type="text" name="purchase_roas" value="<%= data.purchase_roas %>" class="" placeholder="purchase ROAS">
-            <input type="text" name="unique_link_click" value="<%= data.unique_link_click %>" class="" placeholder="unique link click">
-            <input type="text" name="cpc" value="<%= data.cpc %>" class="" placeholder="cpc">
-
-            <input type="text" name="company_name" value="<%= data.company_name %>" class="" placeholder="company name">
-            <input type="date" name="ship_date" value="<%= data.ship_date %>" class="" placeholder="ship date">
-            <input type="text" name="status" value="<%= data.status %>" class="" placeholder="status">
-
-            <input type="text" name="type" value="<%= data.type %>" class="" placeholder="type">
-            <br>
-            <input type="file" name="blogimage" >
-            <br>
-            <span>Old Picture : </span><img src="/<%= data.fileinfo %>" style="width: 100px; height: 60px;" alt="photo" />
-            <br><br>
-            <button type="submit"  class="btn btn-sm btn-success">
-                Update
-            </button>
+            <div class="row d-flex justify-content-center mt-5">
+                <div>
+                    <button type="submit"  class="btn btn-sm btn-success">
+                        Update
+                    </button>
+                </div>
+            </div>
 
         </form>
     </div>
