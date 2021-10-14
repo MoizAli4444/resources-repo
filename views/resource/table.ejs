@@ -13,16 +13,62 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
         <!--end::Fonts-->
         <!--begin::Page Vendors Styles(used by this page)-->
-        <link href="/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
         <!--end::Page Vendors Styles-->
         <!--begin::Global Theme Styles(used by all pages)-->
-        <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-        <!-- <link href="/assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" /> -->
-        <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
         <!--end::Global Theme Styles-->
         <!--begin::Layout Themes(used by all pages)-->
         <!--end::Layout Themes-->
-        <link rel="shortcut icon" href="/assets/media/logos/favicon.ico" />
+        <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+        <style type="text/css">
+.hoverCustomBg:hover td{
+    background-color: #E4E6EF!important;
+}
+
+            
+
+.tableFixHead table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableFixHead th,
+.tableFixHead td {
+  padding: 8px 16px;
+}
+
+
+td:first-child, th:first-child, th:nth-child(2) , th:nth-child(3) {
+  position:sticky;
+  left:0;
+  z-index:1;
+  background-color:white;
+}
+td:nth-child(2),th:nth-child(2)  { 
+position:sticky;
+  left:40px;
+  z-index:1;
+  background-color:white;
+  }
+  td:nth-child(3),th:nth-child(3)  { 
+position:sticky;
+  left:100px;
+  z-index:1;
+  background-color:white;
+  }
+.tableFixHead th {
+  position: sticky!important;
+  top: 0!important;
+  /*background: #eee;*/
+  z-index:2!important;
+}
+th:first-child , th:nth-child(2) ,th:nth-child(3) {
+  z-index:10!important;
+  }
+        </style>
     </head>
     <!--end::Head-->
     <!--begin::Body-->
@@ -32,7 +78,7 @@
         <div id="kt_header_mobile" class="header-mobile">
             <!--begin::Logo-->
             <a>
-                <img alt="Logo" src="/assets/media/logos/logo-letter-2.png" class="logo-default max-h-30px" />
+                <img alt="Logo" src="assets/media/logos/logo-letter-2.png" class="logo-default max-h-30px" />
             </a>
             <!--end::Logo-->
             <!--begin::Toolbar-->
@@ -74,7 +120,7 @@
                                 <div class="aside-brand d-flex flex-column align-items-center flex-column-auto py-5 py-lg-12">
                                     <!--begin::Logo-->
                                     <a>
-                                        <img alt="Logo" src="/assets/media/logos/logo-letter-2.png" class="max-h-30px" />
+                                        <img alt="Logo" src="assets/media/logos/logo-letter-2.png" class="max-h-30px" />
                                     </a>
                                     <!--end::Logo-->
                                 </div>
@@ -178,27 +224,28 @@
                                             <div class="card-body pt-1">
                                                 <div>
                                                     <div>
+                                                        <div class="row">
                                                         <div class="col-12 my-1">
-                                                            <button class="btn btn-sm btn-success" type="button"><i class="fas fa-plus"></i>Create</button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="far fa-copy"></i></button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-success my-1" type="button"><i class="fas fa-plus"></i>Create</button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="far fa-copy"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-angle-down"></i></button>
 
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-pen"></i></button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-angle-down"></i></button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-flask"></i>A/B Test</button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="far fa-file-alt"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-pen"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-flask"></i>A/B Test</button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="far fa-file-alt"></i></button>
                                                             <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-undo-alt"></i></button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="text-dark-50 flaticon2-rubbish-bin-delete-button"></i></button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="text-dark-50 flaticon-users-1"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="text-dark-50 flaticon2-rubbish-bin-delete-button"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="text-dark-50 flaticon-users-1"></i></button>
 
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-exchange-alt"></i></button>
-                                                            <button class="btn btn-sm btn-secondary" type="button">Preview</button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-exchange-alt"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button">Preview</button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-angle-down"></i></button>
 
-                                                            <button class="btn btn-sm btn-secondary float-right mr-1" type="button"><span class="mr-1">Reports</span><i class="fas fa-angle-down"></i></button>
-                                                            <button class="btn btn-sm btn-secondary float-right mr-1" type="button"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-angle-down"></i></button>
-                                                            <button class="btn btn-sm btn-secondary float-right mr-1" type="button"><i class="fas fa-grip-lines"></i><i class="fas fa-angle-down"></i></button>
-                                                            <span class="switch switch-secondary float-right mr-1">
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><span class="mr-1">Reports</span><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><i class="fas fa-grip-lines"></i><i class="fas fa-angle-down"></i></button>
+                                                            <span class="switch switch-secondary float-right mr-1 my-1">
                                                                 <span class="mr-1">View Setup</span>
                                                                 <label>
                                                                     <input type="checkbox" checked="checked" name="select" />
@@ -206,12 +253,12 @@
                                                                 </label>
                                                             </span>
                                                         </div>
-
-                                                        <ul class="nav nav-tabs nav-tabs-line">
-                                                            <li class="nav-item">
+                                                        <div class="col-12">
+                                                        <ul class="nav nav-tabs nav-tabs-line mt-2" style="white-space: nowrap;">
+                                                            <li class="nav-item my-1">
                                                                 <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_1">Resource Center</a>
                                                             </li>
-                                                            <li class="nav-item">
+                                                            <li class="nav-item my-1">
                                                                 <a class="nav-link bg-light px-2 mx-1 py-1" data-toggle="tab" href="#kt_tab_pane_2">
                                                                     Campaigns
                                                                     <div class="alert alert-custom alert-primary fade show px-2 py-1 ml-4 mb-0" role="alert" style="border-radius: 20px;">
@@ -224,13 +271,15 @@
                                                                     </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="nav-item">
+                                                            <li class="nav-item my-1">
                                                                 <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_3">Add Sets For 16 Campaigns</a>
                                                             </li>
-                                                            <li class="nav-item">
+                                                            <li class="nav-item my-1">
                                                                 <a class="nav-link bg-light px-2 mx-1 py-2 active" data-toggle="tab" href="#kt_tab_pane_4">Add For 16 Campaigns</a>
                                                             </li>
                                                         </ul>
+                                                        </div>
+                                                        </div>
                                                         <div class="tab-content mt-5" id="myTabContent">
                                                             <div class="tab-pane fade" id="kt_tab_pane_1" role="tabpanel" aria-labelledby="kt_tab_pane_1">Tab content 1</div>
                                                             <div class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel" aria-labelledby="kt_tab_pane_2">Tab content 2</div>
@@ -238,100 +287,100 @@
                                                             <div class="tab-pane fade show active" id="kt_tab_pane_4" role="tabpanel" aria-labelledby="kt_tab_pane_4">
                                                                 <!--begin: Datatable-->
                                                                 <!--begin: Datatable-->
-                                                                <table class="table table-bordered table-checkable table-hover table-separate" id="kt_datatable">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th></th>
-                                                                            <th>Off/On</th>
-                                                                            <th>Add Name</th>
-                                                                            
-                                                                            
-                                                                            <td>Delievery</td>
-                                                                            <td>Set Name</td>
-                                                                            <td>Bid Strategy</td>
-                                                                            <td>Budget</td>
-                                                                
-                                                                            <td>Results</td>
-                                                                            <td>Impressions</td>
-                                                                            <td>Cost Per result</td>
-                                                                            <td>Add to Cart</td>
-                                                                            <td>Purchases</td>
-                                                                
-                                                                            <td>Amount Spent</td>
-                                                                            <td>Purchase conversion value</td>
-                                                                            <td>Purchase Roas</td>
-                                                                            <td>Unique Link Click</td>
-                                                                            <td>CPC</td>
-                                                                
-                                                                            <td>Company Name</td>
-                                                                            <td>Ship Date</td>
-                                                                            <td>Status</td>
-                                                                            <td>Type</td>
-                                                                            <td>Action</td>
-                                                                            
-                                                                
-                                                                
-                                                                        </tr>
-                                                                        </thead>
-                                                                    <tbody>
+                                                                <div class="tableFixHead">
+<table class="table table-bordered table-checkable table-separate" id="kt_datatable">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Off/On</th>
+            <th>Add Name</th>
+            
+            
+            <td>Delievery</td>
+            <td>Set Name</td>
+            <td>Bid Strategy</td>
+            <td>Budget</td>
+
+            <td>Results</td>
+            <td>Impressions</td>
+            <td>Cost Per result</td>
+            <td>Add to Cart</td>
+            <td>Purchases</td>
+
+            <td>Amount Spent</td>
+            <td>Purchase conversion value</td>
+            <td>Purchase Roas</td>
+            <td>Unique Link Click</td>
+            <td>CPC</td>
+
+            <td>Company Name</td>
+            <td>Ship Date</td>
+            <td>Status</td>
+            <td>Type</td>
+            <td>Action</td>
+            
+
+
+        </tr>
+        </thead>
+        <tbody>
                                                                         
                                                                     
-                                                                    <% for (var i = 0; i < data.length; i++) { %>
-                                                                        <tr>
-                                                                            <td><%= data[i]._id %>></td>
-                                                                            <td>
-                                                                                <span class="switch switch-sm switch-primary">
-                                                                                    <label>
-                                                                                        <input type="checkbox" checked="checked" name="select" />
-                                                                                        <span></span>
-                                                                                    </label>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="align-items-center">
-                                                                                    <div class="symbol symbol-50 flex-shrink-0">
-                                                                                        <img src="/<%= data[i].fileinfo %>" alt="photo" />
-                                                                                    </div>
-                                                                                    <div class="ml-3">
-                                                                                        <span class="text-dark-75 font-weight-bold line-height-sm d-block pb-2"><%= data[i].name %> <small class="d-none"><a href="#" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-edit"></i></a></small></span>
-                                                                                        <small class="d-none">
-                                                                                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-chart-bar"></i> View Charts</a>
-                                                                                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm text-dark-50 flaticon2-edit mr-1"></i>Edit</a>
-                                                                                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-copy mr-1"></i>Duplicate</a>
-                                                                                        </small>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                            
-                                                                            
-                                                                            <td><%= data[i].delivery %></td>
-                                                                            <td><%= data[i].set_name %></td>
-                                                                            <td><%= data[i].bid_strategy %></td>
-                                                                            <td><%= data[i].budget %></td>
-                                                                            <td><%= data[i].results %></td>
-                                                                            <td><%= data[i].impressions %></td>
-                                                                            <td><%= data[i].cost_per_result %></td>
-                                                                            <td><%= data[i].add_to_cart %></td>
-                                                                            <td><%= data[i].purchases %></td>
-                                                                            <td><%= data[i].amount_spent %></td>
-                                                                            <td><%= data[i].purchase_con_val %></td>
-                                                                            <td><%= data[i].purchase_roas %></td>
-                                                                            <td><%= data[i].unique_link_click %></td>
-                                                                            <td><%= data[i].cpc %></td>
-                                                                            <td><%= data[i].company_name %></td>
-                                                                            <td><%= data[i].ship_date %></td>
-                                                                            <td><%= data[i].status %></td>
-                                                                            <td><%= data[i].type %></td>
-                                                                            <td>
-                                                                                <a href="/delete/<%= data[i]._id %>">delete</a>
-                                                                            </td>
-                                                                
-                                                                        </tr>
-                                                                    <% } %>
-                                                                
-                                                                    </tbody>
-                                                                    
-                                                                </table>
+            <% for (var i = 0; i < data.length; i++) { %>
+                <tr>
+                    <td> <%= data[i]._id %> </td>
+            <td >
+                <span class="switch switch-sm switch-primary">
+                    <label>
+                        <input type="checkbox" checked="checked" name="select" />
+                        <span></span>
+                    </label>
+                </span>
+            </td>
+            <td style="min-width: 250px">
+                <div class="d-flex align-items-center">
+                    <div class="symbol symbol-50 flex-shrink-0">
+                        <img src="/<%= data[i].fileinfo %>" alt="photo" />
+                    </div>
+                    <div class="ml-3">
+                        <span class="text-dark-75 font-weight-bold line-height-sm d-block pb-2"><%= data[i].name %> <small class="d-none"><a href="#" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-edit"></i></a></small></span>
+                        <small class="d-none">
+                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-chart-bar"></i> View Charts</a>
+                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm text-dark-50 flaticon2-edit mr-1"></i>Edit</a>
+                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-copy mr-1"></i>Duplicate</a>
+                        </small>
+                    </div>
+                </div>
+            </td>
+            <td><%= data[i].delivery %></td>
+            <td><%= data[i].set_name %></td>
+            <td><%= data[i].bid_strategy %></td>
+            <td><%= data[i].budget %></td>
+            <td><%= data[i].results %></td>
+            <td><%= data[i].impressions %></td>
+            <td><%= data[i].cost_per_result %></td>
+            <td><%= data[i].add_to_cart %></td>
+            <td><%= data[i].purchases %></td>
+            <td><%= data[i].amount_spent %></td>
+            <td><%= data[i].purchase_con_val %></td>
+            <td><%= data[i].purchase_roas %></td>
+            <td><%= data[i].unique_link_click %></td>
+            <td><%= data[i].cpc %></td>
+            <td><%= data[i].company_name %></td>
+            <td><%= data[i].ship_date %></td>
+            <td><%= data[i].status %></td>
+            <td><%= data[i].type %></td>
+            <td>
+                <a class="btn btn-danger btn-sm" href="/delete/<%= data[i]._id %>">Delete</a>
+                <a class="btn btn-info btn-sm" href="/update/<%= data[i]._id %>">Update</a>
+            </td>
+
+        </tr>
+    <% } %>
+
+    </tbody>
+</table>
+</div>
 
                                                                 <!--end: Datatable-->
                                                             </div>
@@ -396,7 +445,7 @@
                                 <div class="dropdown dropdown-inline">
                                     <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <span class="svg-icon svg-icon-lg">
-                                            <!--begin::Svg Icon | path:/assets/media/svg/icons/Communication/Add-user.svg-->
+                                            <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Add-user.svg-->
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                                     <polygon points="0 0 24 0 24 24 0 24" />
@@ -512,7 +561,7 @@
                                     <div class="d-flex flex-column mb-5 align-items-start">
                                         <div class="d-flex align-items-center">
                                             <div class="symbol symbol-circle symbol-40 mr-3">
-                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                                <img alt="Pic" src="assets/media/users/300_12.jpg" />
                                             </div>
                                             <div>
                                                 <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
@@ -530,7 +579,7 @@
                                                 <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
                                             </div>
                                             <div class="symbol symbol-circle symbol-40 ml-3">
-                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                                <img alt="Pic" src="assets/media/users/300_21.jpg" />
                                             </div>
                                         </div>
                                         <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
@@ -542,7 +591,7 @@
                                     <div class="d-flex flex-column mb-5 align-items-start">
                                         <div class="d-flex align-items-center">
                                             <div class="symbol symbol-circle symbol-40 mr-3">
-                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                                <img alt="Pic" src="assets/media/users/300_21.jpg" />
                                             </div>
                                             <div>
                                                 <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
@@ -560,7 +609,7 @@
                                                 <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
                                             </div>
                                             <div class="symbol symbol-circle symbol-40 ml-3">
-                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                                <img alt="Pic" src="assets/media/users/300_21.jpg" />
                                             </div>
                                         </div>
                                         <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">You’ll receive notifications for all issues, pull requests!</div>
@@ -570,7 +619,7 @@
                                     <div class="d-flex flex-column mb-5 align-items-start">
                                         <div class="d-flex align-items-center">
                                             <div class="symbol symbol-circle symbol-40 mr-3">
-                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                                <img alt="Pic" src="assets/media/users/300_12.jpg" />
                                             </div>
                                             <div>
                                                 <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
@@ -590,7 +639,7 @@
                                                 <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
                                             </div>
                                             <div class="symbol symbol-circle symbol-40 ml-3">
-                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                                <img alt="Pic" src="assets/media/users/300_21.jpg" />
                                             </div>
                                         </div>
                                         <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
@@ -602,7 +651,7 @@
                                     <div class="d-flex flex-column mb-5 align-items-start">
                                         <div class="d-flex align-items-center">
                                             <div class="symbol symbol-circle symbol-40 mr-3">
-                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                                <img alt="Pic" src="assets/media/users/300_12.jpg" />
                                             </div>
                                             <div>
                                                 <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
@@ -620,7 +669,7 @@
                                                 <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
                                             </div>
                                             <div class="symbol symbol-circle symbol-40 ml-3">
-                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                                <img alt="Pic" src="assets/media/users/300_21.jpg" />
                                             </div>
                                         </div>
                                         <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
@@ -663,7 +712,7 @@
         <!--begin::Scrolltop-->
         <div id="kt_scrolltop" class="scrolltop">
             <span class="svg-icon">
-                <!--begin::Svg Icon | path:/assets/media/svg/icons/Navigation/Up-2.svg-->
+                <!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <polygon points="0 0 24 0 24 24 0 24" />
@@ -700,22 +749,25 @@
         </script>
         <!--end::Global Config-->
         <!--begin::Global Theme Bundle(used by all pages)-->
-        <script src="/assets/plugins/global/plugins.bundle.js"></script>
-        <!-- <script src="/assets/plugins/custom/prismjs/prismjs.bundle.js"></script> -->
-        <script src="/assets/js/scripts.bundle.js"></script>
+        <script src="assets/plugins/global/plugins.bundle.js"></script>
+        <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+        <script src="assets/js/scripts.bundle.js"></script>
         <!--end::Global Theme Bundle-->
         <!--begin::Page Vendors(used by this page)-->
-        <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+        <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
         <!--end::Page Vendors-->
         <!--begin::Page Scripts(used by this page)-->
-        <script src="/assets/js/pages/crud/datatables/basic/basic.js"></script>
+        <script src="assets/js/pages/crud/datatables/basic/basic.js"></script>
         <!--end::Page Scripts-->
     </body>
     <!--end::Body-->
     <script type="text/javascript">
 $("tr").hover(
+    
   function () {
+    $(this).closest('tr').addClass('hoverCustomBg');
     $(this).find('small').removeClass("d-none");
+    $(this).find('.bodyCheckBox').addClass("");
   },
 );
 $("tr").mouseleave(
@@ -723,9 +775,6 @@ $("tr").mouseleave(
     $(this).find('small').addClass("d-none");
   },
 );
-
-
-
         // Class definition
 
         var KTBootstrapDaterangepicker = (function () {
@@ -780,21 +829,36 @@ $("tr").mouseleave(
         });
 
 
+// $('tr').click(function(e){
+//     $(this).closest('tr').find('.bodyCheckBox').attr('checked', true);
+//     if($(this).closest('tr').hasClass('selected')){
+//          $(this).closest('tr').find('.bodyCheckBox').attr('checked', false);        
+//     }
+//     //$(this).closest('tr').find('.bodyCheckBox').attr('checked', true);
+// });
+
  checkAllBoxes=(e)=>{
            
             var set = $("#kt_datatable").find('td:first-child .checkable');
             var checked = $(e).is(':checked');
 
             $(set).each(function() {
+                if ($("#about").hasClass("opened")) {
+                $("#about").animate({right: "-700px"}, 1);
+                }
                 if (checked) {
                     $(this).prop('checked', true);
                     $(this).closest('tr').addClass('selected');
+                    $('.DTFC_Cloned tr').addClass('selected')
+                    $('.bodyCheckBox').attr('checked', true);
 
-                    
                 }
                 else {
                     $(this).prop('checked', false);
                     $(this).closest('tr').removeClass('selected');
+                    $('.DTFC_Cloned tr').removeClass('selected');
+                    $('.bodyCheckBox').attr('checked', false);
+
                 }
             });
         }
