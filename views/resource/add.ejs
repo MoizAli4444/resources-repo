@@ -1,120 +1,792 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--begin::Head-->
+    <head>
+        <base href="" />
+        <meta charset="utf-8" />
+        <title>Add Record</title>
+        <meta name="description" content="Column rendering datatables examples" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="canonical" href="https://keenthemes.com/metronic" />
+        <!--begin::Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+        <!--end::Fonts-->
+        <!--begin::Page Vendors Styles(used by this page)-->
+        <link href="/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+        <!--end::Page Vendors Styles-->
+        <!--begin::Global Theme Styles(used by all pages)-->
+        <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <!--end::Global Theme Styles-->
+        <!--begin::Layout Themes(used by all pages)-->
+        <!--end::Layout Themes-->
+        <link rel="shortcut icon" href="/assets/media/logos/favicon.ico" />
+        <style type="text/css">
+.hoverCustomBg:hover td{
+    background-color: #E4E6EF!important;
+}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Add Resource</title>
-  </head>
-  <body>
-
-    <div class="container mt-3">    
-        <form action="/resource/add" method="post" enctype="multipart/form-data">
-            <div class="row">
-              <div class="col-3">
-                <label class="font-weight-bold"> Name </label>
-                <input type="text" name="name" class="form-control form-control-sm" placeholder="name">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Delievery </label>
-                <input type="text" name="delivery" class="form-control form-control-sm" placeholder="delivery">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Set Name </label>
-                <input type="text" name="set_name" class="form-control form-control-sm" placeholder="set name">
-
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Bid Strategy </label>
-                <input type="text" name="bid_strategy" class="form-control form-control-sm" placeholder="bid strategy"> 
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Budget </label>
-                <input type="text" name="budget" class="form-control form-control-sm" placeholder="budget">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Results </label>
-                <input type="text" name="results" class="form-control form-control-sm" placeholder="results">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Impressions </label>
-                <input type="text" name="impressions" class="form-control form-control-sm" placeholder="impressions">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Cost per Result </label>
-                <input type="text" name="cost_per_result" class="form-control form-control-sm" placeholder="COP">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Add to Cart </label>
-                <input type="text" name="add_to_cart" class="form-control form-control-sm" placeholder="add to cart">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Purchases </label>
-                <input type="text" name="purchases" class="form-control form-control-sm" placeholder="purchases">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Amount Spent </label>
-                <input type="text" name="amount_spent" class="form-control form-control-sm" placeholder="amount spent">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Purchase Connection Value </label>
-                <input type="text" name="purchase_con_val" class="form-control form-control-sm" placeholder="purchase conversions value">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Purchase ROAS </label>
-                <input type="text" name="purchase_roas" class="form-control form-control-sm" placeholder="purchase ROAS">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Unique Link Click </label>
-                <input type="text" name="unique_link_click" class="form-control form-control-sm" placeholder="unique link click">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> CPC </label>
-                <input type="text" name="cpc" class="form-control form-control-sm" placeholder="cpc">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Company Name </label>
-                <input type="text" name="company_name" class="form-control form-control-sm" placeholder="company name">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Ship Date </label>
-                <input type="date" name="ship_date" class="form-control form-control-sm" placeholder="ship date">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Status </label>
-                <input type="text" name="status" class="form-control form-control-sm" placeholder="status">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Type </label>
-                <input type="text" name="type" class="form-control form-control-sm" placeholder="type">
-              </div>
-              <div class="col-3">
-                <label class="font-weight-bold"> Image </label>
-                <input type="file" name="blogimage" >
-              </div>
-            </div>
-
-            <div class="row d-flex justify-content-center mt-5">
-              <div>
-                <button type="submit"  class="btn btn-sm btn-success">
-                  ADD
-              </button>
-              </div>
-            </div>
             
 
-        </form>
-    </div>
+.tableFixHead table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableFixHead th,
+.tableFixHead td {
+  padding: 8px 16px;
+}
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+td:first-child, th:first-child, th:nth-child(2) , th:nth-child(3) {
+  position:sticky;
+  left:0;
+  z-index:1;
+  background-color:white;
+}
+td:nth-child(2),th:nth-child(2)  { 
+position:sticky;
+  left:40px;
+  z-index:1;
+  background-color:white;
+  }
+  td:nth-child(3),th:nth-child(3)  { 
+position:sticky;
+  left:100px;
+  z-index:1;
+  background-color:white;
+  }
+.tableFixHead th {
+  position: sticky!important;
+  top: 0!important;
+  /*background: #eee;*/
+  z-index:2!important;
+}
+th:first-child , th:nth-child(2) ,th:nth-child(3) {
+  z-index:10!important;
+  }
+        </style>
+    </head>
+    <!--end::Head-->
+    <!--begin::Body-->
+<body id="kt_body" class="header-mobile-fixed subheader-enabled aside-enabled aside-fixed aside-secondary-enabled page-loading">
+        <!--begin::Main-->
+        <!--begin::Header Mobile-->
+        <div id="kt_header_mobile" class="header-mobile">
+            <!--begin::Logo-->
+            <a>
+                <img alt="Logo" src="/assets/media/logos/logo-letter-2.png" class="logo-default max-h-30px" />
+            </a>
+            <!--end::Logo-->
+            <!--begin::Toolbar-->
+            <div class="d-flex align-items-center">
+                <button class="btn p-0 burger-icon burger-icon-left" id="kt_aside_mobile_toggle">
+                    <span></span>
+                </button>
+            </div>
+            <!--end::Toolbar-->
+        </div>
+        <!--end::Header Mobile-->
+        <div class="d-flex flex-column flex-root">
+            <!--begin::Page-->
+            <div class="d-flex flex-row flex-column-fluid page">
+                <!--begin::Aside-->
+                <div class="aside aside-left d-flex aside-fixed" id="kt_aside">
+                    <!--begin::Primary-->
+                    <div class="aside-primary d-flex flex-column align-items-center flex-row-auto">
+                        <!--begin::Brand-->
+
+                        <!--end::Brand-->
+                        <!--begin::Nav Wrapper-->
+                        <div class="aside-nav d-flex flex-column align-items-center flex-column-fluid py-5 scroll scroll-pull">
+                            <!--begin::Nav-->
+                            <ul class="nav flex-column" role="tablist">
+                                <!--begin::Item-->
+                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Latest Projects">
+                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg active" data-toggle="tab" data-target="#kt_aside_tab_1" role="tab">
+                                        <i class="icon-2x text-dark-50 flaticon-home-2"></i>
+                                    </a>
+                                </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
+                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
+                                        <i class="fas fa-bars"></i>
+                                    </a>
+                                </li>
+                                <div class="aside-brand d-flex flex-column align-items-center flex-column-auto py-5 py-lg-12">
+                                    <!--begin::Logo-->
+                                    <a>
+                                        <img alt="Logo" src="/assets/media/logos/logo-letter-2.png" class="max-h-30px" />
+                                    </a>
+                                    <!--end::Logo-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
+                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
+                                        <i class="icon-2x text-dark-50 flaticon-stopwatch"></i>
+                                    </a>
+                                </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+
+                                <!--end::Item-->
+                                <!--begin::Item-->
+
+                                <!--end::Item-->
+                            </ul>
+                            <!--end::Nav-->
+                        </div>
+                        <!--end::Nav Wrapper-->
+                        <!--begin::Footer-->
+                        <div class="aside-footer d-flex flex-column align-items-center flex-column-auto py-4 py-lg-10">
+                            <!--begin::Aside Toggle-->
+
+                            <!--end::Aside Toggle-->
+                            <!--begin::Quick Actions-->
+                            <a href="#" class="btn btn-icon btn-clean btn-lg mb-1" id="kt_quick_actions_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Quick Actions">
+                                <i class="icon-2x text-dark-50 flaticon-settings"></i>
+                            </a>
+                            <!--end::Quick Actions-->
+                            <!--begin::Quick Panel-->
+                            <a href="#" class="btn btn-icon btn-clean btn-lg mb-1 position-relative" id="kt_quick_panel_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Quick Panel">
+                                <i class="icon-2x text-dark-50 flaticon2-bell-1"></i>
+                                <span class="label label-sm label-light-danger label-rounded font-weight-bolder position-absolute top-0 right-0 mt-1 mr-1">99</span>
+                            </a>
+                            
+                            <!--end::Quick Panel-->
+                            <!--begin::User-->
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
+                                <i class="icon-2x text-dark-50 flaticon-search-magnifier-interface-symbol"></i>
+                            </a>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
+                                <i class="icon-2x text-dark-50 flaticon-questions-circular-button"></i>
+                            </a>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
+                                <i class="icon-2x text-dark-50 flaticon-book"></i>
+                            </a>
+                            <!--end::User-->
+                        </div>
+                        <!--end::Footer-->
+                    </div>
+                    <!--end::Primary-->
+                </div>
+                <!--end::Aside-->
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+                    <!--begin::Content-->
+                    <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                        <!--begin::Entry-->
+                        <div class="d-flex flex-column-fluid">
+                            <!--begin::Container-->
+<div class="container">
+                                <div class="row mt-3 mb-2">
+                                    <div class="col-md-3">
+                                        <div class="d-flex">
+                                            <label class="font-weight-bold mr-2 mt-3" for="exampleSelectl">Ads</label>
+                                            <input type="text" class="form-control form-control-sm" placeholder="A(123456789)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 offset-lg-5">
+                                        <button class="btn btn-sm btn-secondary" type="button"><i class="ki ki-reload text-dark-50"></i></button>
+                                        <button class="btn btn-sm btn-secondary" type="button">Discard Draft</button>
+                                        <button class="btn btn-sm btn-secondary" type="button">Review and Publish</button>
+                                        <button class="btn btn-sm btn-secondary" type="button"><i class="text-dark-50 ki ki-more-hor"></i></button>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-md-9">
+                                        <div>
+                                            <div class="input-icon">
+                                                <input type="text" class="form-control" placeholder="Search..." />
+                                                <span><i class="flaticon2-search-1 icon-md"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="input-group" id="kt_daterangepicker_6">
+                                            <input type="text" class="form-control" readonly placeholder="Select date range" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container bg-white mt-5 border rounded p-2">
+                                    <!-- // add form - start here -->
+                                    <form action="/resource/add" method="post" enctype="multipart/form-data">
+                                      <div class="row">
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Name </label>
+                                          <input type="text" name="name" class="form-control form-control-sm" placeholder="name">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Delievery </label>
+                                          <input type="text" name="delivery" class="form-control form-control-sm" placeholder="delivery">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Set Name </label>
+                                          <input type="text" name="set_name" class="form-control form-control-sm" placeholder="set name">
+                          
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Bid Strategy </label>
+                                          <input type="text" name="bid_strategy" class="form-control form-control-sm" placeholder="bid strategy"> 
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Budget </label>
+                                          <input type="text" name="budget" class="form-control form-control-sm" placeholder="budget">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Results </label>
+                                          <input type="text" name="results" class="form-control form-control-sm" placeholder="results">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Impressions </label>
+                                          <input type="text" name="impressions" class="form-control form-control-sm" placeholder="impressions">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Cost per Result </label>
+                                          <input type="text" name="cost_per_result" class="form-control form-control-sm" placeholder="COP">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Add to Cart </label>
+                                          <input type="text" name="add_to_cart" class="form-control form-control-sm" placeholder="add to cart">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Purchases </label>
+                                          <input type="text" name="purchases" class="form-control form-control-sm" placeholder="purchases">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Amount Spent </label>
+                                          <input type="text" name="amount_spent" class="form-control form-control-sm" placeholder="amount spent">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Purchase Connection Value </label>
+                                          <input type="text" name="purchase_con_val" class="form-control form-control-sm" placeholder="purchase conversions value">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Purchase ROAS </label>
+                                          <input type="text" name="purchase_roas" class="form-control form-control-sm" placeholder="purchase ROAS">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Unique Link Click </label>
+                                          <input type="text" name="unique_link_click" class="form-control form-control-sm" placeholder="unique link click">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> CPC </label>
+                                          <input type="text" name="cpc" class="form-control form-control-sm" placeholder="cpc">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Company Name </label>
+                                          <input type="text" name="company_name" class="form-control form-control-sm" placeholder="company name">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Ship Date </label>
+                                          <input type="date" name="ship_date" class="form-control form-control-sm" placeholder="ship date">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Status </label>
+                                          <input type="text" name="status" class="form-control form-control-sm" placeholder="status">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Type </label>
+                                          <input type="text" name="type" class="form-control form-control-sm" placeholder="type">
+                                        </div>
+                                        <div class="col-3">
+                                          <label class="font-weight-bold"> Image </label>
+                                          <input type="file" name="blogimage" >
+                                        </div>
+                                      </div>
+                          
+                                      <div class="row d-flex justify-content-center mt-5">
+                                        <div>
+                                          <button type="submit"  class="btn btn-sm btn-success mt-5">
+                                            ADD
+                                        </button>
+                                        </div>
+                                      </div>
+                                      
+                          
+                                  </form>
+                                    <!-- // add form - close here -->
+
+                                </div>
+                            </div>
+                            <!--end::Container-->
+                        </div>
+                        <!--end::Entry-->
+                    </div>
+                    <!--end::Content-->
+                    <!--begin::Footer-->
+                    <!--doc: add "bg-white" class to have footer with solod background color-->
+                    <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+                        <!--begin::Container-->
+                        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                            <!--begin::Copyright-->
+                            <div class="text-dark order-2 order-md-1">
+                                <span class="text-muted font-weight-bold mr-2">2021©</span>
+                                
+                            </div>
+                            <!--end::Copyright-->
+                            <!--begin::Nav-->
+                            <div class="nav nav-dark order-1 order-md-2">
+                                <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pr-3 pl-0">About</a>
+                                <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link px-3">Team</a>
+                                <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-3 pr-0">Contact</a>
+                            </div>
+                            <!--end::Nav-->
+                        </div>
+                        <!--end::Container-->
+                    </div>
+                    <!--end::Footer-->
+                </div>
+                <!--end::Wrapper-->
+            </div>
+            <!--end::Page-->
+        </div>
+        <!--end::Main-->
+        
+       
+        <!--begin::Quick Panel-->
+        
+        </div>
+        <!--end::Quick Panel-->
+        <!--begin::Chat Panel-->
+        <div class="modal modal-sticky modal-sticky-bottom-right" id="kt_chat_modal" role="dialog" data-backdrop="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!--begin::Card-->
+                    <div class="card card-custom">
+                        <!--begin::Header-->
+                        <div class="card-header align-items-center px-4 py-3">
+                            <div class="text-left flex-grow-1">
+                                <!--begin::Dropdown Menu-->
+                                <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="svg-icon svg-icon-lg">
+                                            <!--begin::Svg Icon | path:/assets/media/svg/icons/Communication/Add-user.svg-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <polygon points="0 0 24 0 24 24 0 24" />
+                                                    <path
+                                                        d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000"
+                                                        fill-rule="nonzero"
+                                                        opacity="0.3"
+                                                    />
+                                                    <path
+                                                        d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000"
+                                                        fill-rule="nonzero"
+                                                    />
+                                                </g>
+                                            </svg>
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                    </button>
+                                    <div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-md">
+                                        <!--begin::Navigation-->
+                                        <ul class="navi navi-hover py-5">
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-drop"></i>
+                                                    </span>
+                                                    <span class="navi-text">New Group</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-list-3"></i>
+                                                    </span>
+                                                    <span class="navi-text">Contacts</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-rocket-1"></i>
+                                                    </span>
+                                                    <span class="navi-text">Groups</span>
+                                                    <span class="navi-link-badge">
+                                                        <span class="label label-light-primary label-inline font-weight-bold">new</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-bell-2"></i>
+                                                    </span>
+                                                    <span class="navi-text">Calls</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-gear"></i>
+                                                    </span>
+                                                    <span class="navi-text">Settings</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-separator my-3"></li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-magnifier-tool"></i>
+                                                    </span>
+                                                    <span class="navi-text">Help</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-bell-2"></i>
+                                                    </span>
+                                                    <span class="navi-text">Privacy</span>
+                                                    <span class="navi-link-badge">
+                                                        <span class="label label-light-danger label-rounded font-weight-bold">5</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!--end::Navigation-->
+                                    </div>
+                                </div>
+                                <!--end::Dropdown Menu-->
+                            </div>
+                            <div class="text-center flex-grow-1">
+                                <div class="text-dark-75 font-weight-bold font-size-h5">Matt Pears</div>
+                                <div>
+                                    <span class="label label-dot label-success"></span>
+                                    <span class="font-weight-bold text-muted font-size-sm">Active</span>
+                                </div>
+                            </div>
+                            <div class="text-right flex-grow-1">
+                                <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-dismiss="modal">
+                                    <i class="ki ki-close icon-1x"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--end::Header-->
+                        <!--begin::Body-->
+                        <div class="card-body">
+                            <!--begin::Scroll-->
+                            <div class="scroll scroll-pull" data-height="375" data-mobile-height="300">
+                                <!--begin::Messages-->
+                                <div class="messages">
+                                    <!--begin::Message In-->
+                                    <div class="d-flex flex-column mb-5 align-items-start">
+                                        <div class="d-flex align-items-center">
+                                            <div class="symbol symbol-circle symbol-40 mr-3">
+                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
+                                                <span class="text-muted font-size-sm">2 Hours</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">How likely are you to recommend our company to your friends and family?</div>
+                                    </div>
+                                    <!--end::Message In-->
+                                    <!--begin::Message Out-->
+                                    <div class="d-flex flex-column mb-5 align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <span class="text-muted font-size-sm">3 minutes</span>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
+                                            </div>
+                                            <div class="symbol symbol-circle symbol-40 ml-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
+                                            Hey there, we’re just writing to let you know that you’ve been subscribed to a repository on GitHub.
+                                        </div>
+                                    </div>
+                                    <!--end::Message Out-->
+                                    <!--begin::Message In-->
+                                    <div class="d-flex flex-column mb-5 align-items-start">
+                                        <div class="d-flex align-items-center">
+                                            <div class="symbol symbol-circle symbol-40 mr-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
+                                                <span class="text-muted font-size-sm">40 seconds</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">Ok, Understood!</div>
+                                    </div>
+                                    <!--end::Message In-->
+                                    <!--begin::Message Out-->
+                                    <div class="d-flex flex-column mb-5 align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <span class="text-muted font-size-sm">Just now</span>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
+                                            </div>
+                                            <div class="symbol symbol-circle symbol-40 ml-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">You’ll receive notifications for all issues, pull requests!</div>
+                                    </div>
+                                    <!--end::Message Out-->
+                                    <!--begin::Message In-->
+                                    <div class="d-flex flex-column mb-5 align-items-start">
+                                        <div class="d-flex align-items-center">
+                                            <div class="symbol symbol-circle symbol-40 mr-3">
+                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
+                                                <span class="text-muted font-size-sm">40 seconds</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">
+                                            You can unwatch this repository immediately by clicking here: <a href="#">https://github.com</a>
+                                        </div>
+                                    </div>
+                                    <!--end::Message In-->
+                                    <!--begin::Message Out-->
+                                    <div class="d-flex flex-column mb-5 align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <span class="text-muted font-size-sm">Just now</span>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
+                                            </div>
+                                            <div class="symbol symbol-circle symbol-40 ml-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
+                                            Discover what students who viewed Learn Figma - UI/UX Design. Essential Training also viewed
+                                        </div>
+                                    </div>
+                                    <!--end::Message Out-->
+                                    <!--begin::Message In-->
+                                    <div class="d-flex flex-column mb-5 align-items-start">
+                                        <div class="d-flex align-items-center">
+                                            <div class="symbol symbol-circle symbol-40 mr-3">
+                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
+                                                <span class="text-muted font-size-sm">40 seconds</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">Most purchased Business courses during this sale!</div>
+                                    </div>
+                                    <!--end::Message In-->
+                                    <!--begin::Message Out-->
+                                    <div class="d-flex flex-column mb-5 align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <span class="text-muted font-size-sm">Just now</span>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
+                                            </div>
+                                            <div class="symbol symbol-circle symbol-40 ml-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
+                                            Company BBQ to celebrate the last quater achievements and goals. Food and drinks provided
+                                        </div>
+                                    </div>
+                                    <!--end::Message Out-->
+                                </div>
+                                <!--end::Messages-->
+                            </div>
+                            <!--end::Scroll-->
+                        </div>
+                        <!--end::Body-->
+                        <!--begin::Footer-->
+                        <div class="card-footer align-items-center">
+                            <!--begin::Compose-->
+                            <textarea class="form-control border-0 p-0" rows="2" placeholder="Type a message"></textarea>
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <div class="mr-3">
+                                    <a href="#" class="btn btn-clean btn-icon btn-md mr-1">
+                                        <i class="flaticon2-photograph icon-lg"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-clean btn-icon btn-md">
+                                        <i class="flaticon2-photo-camera icon-lg"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-md text-uppercase font-weight-bold chat-send py-2 px-6">Send</button>
+                                </div>
+                            </div>
+                            <!--begin::Compose-->
+                        </div>
+                        <!--end::Footer-->
+                    </div>
+                    <!--end::Card-->
+                </div>
+            </div>
+        </div>
+        <!--end::Chat Panel-->
+        <!--begin::Scrolltop-->
+        <div id="kt_scrolltop" class="scrolltop">
+            <span class="svg-icon">
+                <!--begin::Svg Icon | path:/assets/media/svg/icons/Navigation/Up-2.svg-->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon points="0 0 24 0 24 24 0 24" />
+                        <rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+                        <path
+                            d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+                            fill="#000000"
+                            fill-rule="nonzero"
+                        />
+                    </g>
+                </svg>
+                <!--end::Svg Icon-->
+            </span>
+        </div>
+        <!--end::Scrolltop-->
+
+        <script>
+            var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";
+        </script>
+        <!--begin::Global Config(global config for global JS scripts)-->
+        <script>
+            var KTAppSettings = {
+                breakpoints: { sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1200 },
+                colors: {
+                    theme: {
+                        base: { white: "#ffffff", primary: "#1BC5BD", secondary: "#E5EAEE", success: "#1BC5BD", info: "#6993FF", warning: "#FFA800", danger: "#F64E60", light: "#F3F6F9", dark: "#212121" },
+                        light: { white: "#ffffff", primary: "#1BC5BD", secondary: "#ECF0F3", success: "#C9F7F5", info: "#E1E9FF", warning: "#FFF4DE", danger: "#FFE2E5", light: "#F3F6F9", dark: "#D6D6E0" },
+                        inverse: { white: "#ffffff", primary: "#ffffff", secondary: "#212121", success: "#ffffff", info: "#ffffff", warning: "#ffffff", danger: "#ffffff", light: "#464E5F", dark: "#ffffff" },
+                    },
+                    gray: { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" },
+                },
+                "font-family": "Poppins",
+            };
+        </script>
+        <!--end::Global Config-->
+        <!--begin::Global Theme Bundle(used by all pages)-->
+        <script src="/assets/plugins/global/plugins.bundle.js"></script>
+        <script src="/assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+        <script src="/assets/js/scripts.bundle.js"></script>
+        <!--end::Global Theme Bundle-->
+        <!--begin::Page Vendors(used by this page)-->
+        <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+        <!--end::Page Vendors-->
+        <!--begin::Page Scripts(used by this page)-->
+        <script src="/assets/js/pages/crud/datatables/basic/basic.js"></script>
+        <!--end::Page Scripts-->
+    </body>
+    <!--end::Body-->
+    <script type="text/javascript">
+$("tr").hover(
+    
+  function () {
+    $(this).closest('tr').addClass('hoverCustomBg');
+    $(this).find('small').removeClass("d-none");
+    $(this).find('.bodyCheckBox').addClass("");
+  },
+);
+$("tr").mouseleave(
+  function () {
+    $(this).find('small').addClass("d-none");
+  },
+);
+        // Class definition
+
+        var KTBootstrapDaterangepicker = (function () {
+            // Private functions
+            var demos = function () {
+                // minimum setup
+                $("#kt_daterangepicker_1, #kt_daterangepicker_1_modal").daterangepicker({
+                    buttonClasses: " btn",
+                    applyClass: "btn-primary",
+                    cancelClass: "btn-secondary",
+                });
+
+                // input group and left alignment setup
+
+                // predefined ranges
+                var start = moment().subtract(29, "days");
+                var end = moment();
+
+                $("#kt_daterangepicker_6").daterangepicker(
+                    {
+                        buttonClasses: " btn",
+                        applyClass: "btn-primary",
+                        cancelClass: "btn-secondary",
+
+                        startDate: start,
+                        endDate: end,
+                        ranges: {
+                            Today: [moment(), moment()],
+                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                            "This Month": [moment().startOf("month"), moment().endOf("month")],
+                            "Last Month": [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                        },
+                    },
+                    function (start, end, label) {
+                        $("#kt_daterangepicker_6 .form-control").val(start.format("MM/DD/YYYY") + " - " + end.format("MM/DD/YYYY"));
+                    }
+                );
+            };
+
+            return {
+                // public functions
+                init: function () {
+                    demos();
+                },
+            };
+        })();
+
+        jQuery(document).ready(function () {
+            KTBootstrapDaterangepicker.init();
+        });
+
+
+// $('tr').click(function(e){
+//     $(this).closest('tr').find('.bodyCheckBox').attr('checked', true);
+//     if($(this).closest('tr').hasClass('selected')){
+//          $(this).closest('tr').find('.bodyCheckBox').attr('checked', false);        
+//     }
+//     //$(this).closest('tr').find('.bodyCheckBox').attr('checked', true);
+// });
+
+ checkAllBoxes=(e)=>{
+           
+            var set = $("#kt_datatable").find('td:first-child .checkable');
+            var checked = $(e).is(':checked');
+
+            $(set).each(function() {
+                if ($("#about").hasClass("opened")) {
+                $("#about").animate({right: "-700px"}, 1);
+                }
+                if (checked) {
+                    $(this).prop('checked', true);
+                    $(this).closest('tr').addClass('selected');
+                    $('.DTFC_Cloned tr').addClass('selected')
+                    $('.bodyCheckBox').attr('checked', true);
+
+                }
+                else {
+                    $(this).prop('checked', false);
+                    $(this).closest('tr').removeClass('selected');
+                    $('.DTFC_Cloned tr').removeClass('selected');
+                    $('.bodyCheckBox').attr('checked', false);
+
+                }
+            });
+        }
+
+    </script>
 </html>
