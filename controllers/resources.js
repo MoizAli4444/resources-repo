@@ -70,7 +70,8 @@ router.post('/add', upload.single('blogimage'), async (req , res)=>{
         addres = await addres.save(function(err,room){
             // var newRoomId = room._id;
             console.log('id-> ' , room);
-          res.send('inserted');
+        //   res.send('inserted');
+        res.redirect('/');
           });
         // res.send('create ho gya');
     }catch(e){
