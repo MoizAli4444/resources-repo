@@ -317,7 +317,7 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
             <td>Ship Date</td>
             <td>Status</td>
             <td>Type</td>
-            <td>Action</td>
+            <!-- <td>Action</td> -->
             
 
 
@@ -343,7 +343,11 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
                         <img src="/<%= data[i].fileinfo %>" alt="photo" />
                     </div>
                     <div class="ml-3">
-                        <span class="text-dark-75 font-weight-bold line-height-sm d-block pb-2"><%= data[i].name %> <small class="d-none"><a href="/update/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-edit"></i></a></small></span>
+                        <span class="text-dark-75 font-weight-bold line-height-sm d-block pb-2"><%= data[i].name %> 
+                            <small class="d-none"><a href="/update/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-edit"></i></a>
+                                <a href="/delete/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-delete"></i></a>
+                            </small>
+                        </span>
                         <small class="d-none">
                             <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-chart-bar"></i> View Charts</a>
                             <a href="/update/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"> <i class="icon-sm text-dark-50 flaticon2-edit mr-1"></i>Edit</a>
@@ -370,10 +374,10 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
             <td><%= data[i].ship_date %></td>
             <td><%= data[i].status %></td>
             <td><%= data[i].type %></td>
-            <td>
+            <!-- <td>
                 <a class="btn btn-danger btn-sm" href="/delete/<%= data[i]._id %>">Delete</a>
-                <!-- <a class="btn btn-info btn-sm" href="/update/<%= data[i]._id %>">Update</a> -->
-            </td>
+                <a class="btn btn-info btn-sm" href="/update/<%= data[i]._id %>">Update</a>
+            </td> -->
 
         </tr>
     <% } %>
