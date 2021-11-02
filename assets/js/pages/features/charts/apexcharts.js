@@ -2,7 +2,7 @@
 
 // Shared Colors Definition
 const primary = '#6993FF';
-const success = '#1BC5BD';
+const success = '#1871ed';
 const info = '#8950FC';
 const warning = '#FFA800';
 const danger = '#F64E60';

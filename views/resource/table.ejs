@@ -22,12 +22,16 @@
         <!--end::Global Theme Styles-->
         <!--begin::Layout Themes(used by all pages)-->
         <!--end::Layout Themes-->
-        <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+        <link rel="shortcut icon" href="assets/media/logos/sSd2lSvsUM4.ico" />
         <style type="text/css">
 .hoverCustomBg:hover td{
-    background-color: #E4E6EF!important;
+/*<!--change icon 28 october 2021-->*/
+    background-color: #EDF5FF!important;
 }
-
+.hoverEffect:hover span{
+/*<!--change icon 28 october 2021-->*/
+    text-decoration: underline;
+}
             
 
 .tableFixHead table {
@@ -68,6 +72,16 @@ position:sticky;
 th:first-child , th:nth-child(2) ,th:nth-child(3) {
   z-index:10!important;
   }
+  .nav-link.bg-light.px-2.mx-1:hover{
+color:#3578E8;
+
+  }
+  .nav.nav-tabs.nav-tabs-line .nav-link:hover:not(.disabled), .nav.nav-tabs.nav-tabs-line .nav-link.active, .nav.nav-tabs.nav-tabs-line .show > .nav-link{
+      border-bottom: #3578E8;
+  }
+.nav-link.bg-light.px-2.mx-1.py-1.active{
+    color:#1871ED;
+}
         </style>
     </head>
     <!--end::Head-->
@@ -75,20 +89,7 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
 <body id="kt_body" class="header-mobile-fixed subheader-enabled aside-enabled aside-fixed aside-secondary-enabled page-loading">
         <!--begin::Main-->
         <!--begin::Header Mobile-->
-        <div id="kt_header_mobile" class="header-mobile">
-            <!--begin::Logo-->
-            <a>
-                <img alt="Logo" src="assets/media/logos/logo-letter-2.png" class="logo-default max-h-30px" />
-            </a>
-            <!--end::Logo-->
-            <!--begin::Toolbar-->
-            <div class="d-flex align-items-center">
-                <button class="btn p-0 burger-icon burger-icon-left" id="kt_aside_mobile_toggle">
-                    <span></span>
-                </button>
-            </div>
-            <!--end::Toolbar-->
-        </div>
+  
         <!--end::Header Mobile-->
         <div class="d-flex flex-column flex-root">
             <!--begin::Page-->
@@ -105,30 +106,36 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
                             <!--begin::Nav-->
                             <ul class="nav flex-column" role="tablist">
                                 <!--begin::Item-->
-                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Latest Projects">
-                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg active" data-toggle="tab" data-target="#kt_aside_tab_1" role="tab">
-                                        <i class="icon-2x text-dark-50 flaticon-home-2"></i>
+                                <li class="nav-item" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Bussiness Home">
+                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg" data-toggle="tab" data-target="#kt_aside_tab_1" role="tab">
+                                        <i class="qo4j1dvg img mr-2" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -310px; background-size: 34px 2640px; width: 22px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
                                     </a>
                                 </li>
                                 <!--end::Item-->
                                 <!--begin::Item-->
-                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
+                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="All Tools">
                                     <a href="#" class="nav-link btn btn-icon btn-clean btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
-                                        <i class="fas fa-bars"></i>
+                                        <i class="fas fa-bars text-dark"></i>
                                     </a>
                                 </li>
-                                <div class="aside-brand d-flex flex-column align-items-center flex-column-auto py-5 py-lg-12">
+                                <div class="aside-brand d-flex flex-column align-items-center flex-column-auto py-1">
                                     <!--begin::Logo-->
                                     <a>
-                                        <img alt="Logo" src="assets/media/logos/logo-letter-2.png" class="max-h-30px" />
+                                        <img alt="Logo" src="assets/media/logos/logo-letter-2.png" class="max-h-20px" />
                                     </a>
                                     <!--end::Logo-->
                                 </div>
                                 <!--end::Item-->
                                 <!--begin::Item-->
-                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
-                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
-                                        <i class="icon-2x text-dark-50 flaticon-stopwatch"></i>
+                                <li class="nav-item mb-1" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Alerts">
+                                    <a href="#" class="btn btn-icon btn-clean btn-lg mb-1 position-relative" id="kt_quick_panel_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Quick Panel">
+                                        <i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -178px; background-size: 34px 2640px; width: 26px; height: 26px; background-repeat: no-repeat; display: inline-block;"></i>
+                                        <span class="label label-md label-danger  font-weight-bolder position-absolute top-0 right-0 mt-1 mr-1">2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-1" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Campaigns">
+                                    <a href="#" class="nav-link btn btn-icon" style="background: #ECF3FF" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
+                                        <i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -230px; background-size: 34px 2640px; width: 22px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
                                     </a>
                                 </li>
                                 <!--end::Item-->
@@ -145,29 +152,29 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
                         <!--begin::Footer-->
                         <div class="aside-footer d-flex flex-column align-items-center flex-column-auto py-4 py-lg-10">
                             <!--begin::Aside Toggle-->
-
+                            <div style="border-bottom: solid 1px #D9D9D9;width: 100%"></div>
                             <!--end::Aside Toggle-->
                             <!--begin::Quick Actions-->
-                            <a href="#" class="btn btn-icon btn-clean btn-lg mb-1" id="kt_quick_actions_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Quick Actions">
-                                <i class="icon-2x text-dark-50 flaticon-settings"></i>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg mb-1" id="kt_quick_actions_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Settings">
+                                <i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -1123px; background-size: 34px 2640px; width: 22px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
                             </a>
                             <!--end::Quick Actions-->
                             <!--begin::Quick Panel-->
-                            <a href="#" class="btn btn-icon btn-clean btn-lg mb-1 position-relative" id="kt_quick_panel_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Quick Panel">
-                                <i class="icon-2x text-dark-50 flaticon2-bell-1"></i>
-                                <span class="label label-sm label-light-danger label-rounded font-weight-bolder position-absolute top-0 right-0 mt-1 mr-1">99</span>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg mb-1 position-relative" id="kt_quick_panel_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Notifications">
+                                <i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -703px; background-size: 34px 2640px; width: 22px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
+                                <span class="label label-md label-danger label-rounded font-weight-bolder position-absolute top-0 right-0 mt-1 mr-1">99</span>
                             </a>
                             
                             <!--end::Quick Panel-->
                             <!--begin::User-->
-                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
-                                <i class="icon-2x text-dark-50 flaticon-search-magnifier-interface-symbol"></i>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Search">
+                                <i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -992px; background-size: 34px 2640px; width: 22px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
                             </a>
-                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
-                                <i class="icon-2x text-dark-50 flaticon-questions-circular-button"></i>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-30px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Help">
+                                <i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -2309px; background-size: 34px 2640px; width: 22px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
                             </a>
-                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
-                                <i class="icon-2x text-dark-50 flaticon-book"></i>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Expand">
+                                <i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -1212px; background-size: 34px 2640px; width: 22px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
                             </a>
                             <!--end::User-->
                         </div>
@@ -183,102 +190,130 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
                         <!--begin::Entry-->
                         <div class="d-flex flex-column-fluid">
                             <!--begin::Container-->
-<div class="container">
+                            
+<div class="container" style="max-width: 1430px;">
                                 <div class="row mt-3 mb-2">
                                     <div class="col-md-3">
                                         <div class="d-flex">
-                                            <label class="font-weight-bold mr-2 mt-3" for="exampleSelectl">Ads</label>
+
+                                            <label class="font-weight-bold mr-2 mt-2" for="exampleSelectl">Ads</label>
                                             <input type="text" class="form-control form-control-sm" placeholder="A(123456789)">
                                         </div>
                                     </div>
-                                    <div class="col-md-4 offset-lg-5">
-                                        <button class="btn btn-sm btn-secondary" type="button"><i class="ki ki-reload text-dark-50"></i></button>
-                                        <button class="btn btn-sm btn-secondary" type="button">Discard Draft</button>
+                                    <div class="col-md-5 offset-lg-4">
+                                        <label class=" mr-2 mt-2" for="exampleSelectl">Updated just now</label>
+                                        <!--change icon 28 october 2021-->
+                                        <button class="btn btn-sm btn-secondary" type="button"><i class="qo4j1dvg img mr-2" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -1470px; background-size: 34px 2640px; width: 17px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i></button>
+                                        <button class="btn btn-sm btn-secondary" type="button">Discard Drafts</button>
                                         <button class="btn btn-sm btn-secondary" type="button">Review and Publish</button>
-                                        <button class="btn btn-sm btn-secondary" type="button"><i class="text-dark-50 ki ki-more-hor"></i></button>
+                                        <!--change icon 28 october 2021-->
+                                        <button class="btn btn-sm btn-secondary" type="button"><i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -2010px; background-size: 34px 2640px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i></button>
                                     </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-md-9">
                                         <div>
                                             <div class="input-icon">
-                                                <input type="text" class="form-control" placeholder="Search..." />
+                                                <input type="text" class="form-control" placeholder="Search and filter" />
                                                 <span><i class="flaticon2-search-1 icon-md"></i></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="input-group" id="kt_daterangepicker_6">
-                                            <input type="text" class="form-control" readonly placeholder="Select date range" />
+                                            <input type="text" class="form-control" readonly placeholder="10/21/2021 - 10/21/2021" />
                                             <div class="input-group-append">
-                                                <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                                <span class="input-group-text"><i class="fas fa-sort-down"></i></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row">
+                                <div class="row" style="height: 100%;">
                                     <div class="col-12">
                                         <!--begin::Card-->
                                         <div class="card card-custom">
                                             <div class="card-body pt-1">
                                                 <div>
                                                     <div>
+                                                    
+                                                        <!--<div class="col-12">-->
+                                                          
+                                                            <ul class="nav nav-tabs nav-tabs-line mt-2" style="white-space: nowrap;">
+                                                                <div class="col-md-3" >
+                                                                    <li class="nav-item my-1 font-weight-bold">
+                                                                        <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_1" style="color: black"><i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -862px; background-size: 34px 2640px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>Resource Center</a>
+                                                                    </li>
+                                                                </div>
+                                                                <div class="col-md-3" >
+                                                                <li class="nav-item my-1 font-weight-bold">
+                                                                    <a class="nav-link bg-light px-2 mx-1 py-1" data-toggle="tab" href="#kt_tab_pane_2" style="color: black;"><i class="qo4j1dvg img mr-2" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -508px; background-size: 34px 2640px; width: 22px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                                        Campaigns
+                                                                        <div class="alert alert-custom alert-primary fade show px-2 py-1 ml-25 mb-0" role="alert"  >
+                                                                            <small class="alert-text">16 Selected</small>
+                                                                            <div class="alert-close">
+                                                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                                                    <span aria-hidden="true"><i class="ki ki-close"></i></span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                </div>
+                                                                <div class="col-md-3" >
+                                                                <li class="nav-item my-1 font-weight-bold">
+                                                                    <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_3" style="color:black"><i class="qo4j1dvg img mr-2" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -488px; background-size: 34px 2640px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>Add Sets For 16 Campaigns</a>
+                                                                </li>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                <li class="nav-item my-1 font-weight-bold">
+                                                                    <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_4" style="color:#1871ED"><i class="qo4j1dvg img mr-2" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -50px; background-size: 34px 2640px; width: 23px; height: 20px; background-repeat: no-repeat; display: inline-block;" ></i>Add For 16 Campaigns</a>
+                                                                </li>
+                                                                </div>
+                                                            </ul>
+                                                           <!--</div>--> 
                                                         <div class="row">
                                                         <div class="col-12 my-1">
-                                                            <a href="/resource/add" class="btn btn-sm btn-success my-1" type="button"><i class="fas fa-plus"></i>Create</a>
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="far fa-copy"></i></button>
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-angle-down"></i></button>
+                                                            <a href="/resource/add" class="btn btn-sm btn-success my-1" type="button" style="background-color: #63BE08;border-color: #63BE08;"><i class="fas fa-plus"></i>Create</a>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -1882px; background-size: 34px 2640px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-sort-down" style="margin-top: -5px;"></i></button>
 
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-pen"></i></button>
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-pen"></i>Edit</button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-sort-down"></i></button>
                                                             <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-flask"></i>A/B Test</button>
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="far fa-file-alt"></i></button>
-                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-undo-alt"></i></button>
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="text-dark-50 flaticon2-rubbish-bin-delete-button"></i></button>
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="text-dark-50 flaticon-users-1"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -1975px; background-size: 34px 2640px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i></button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -2550px; background-size: 34px 2640px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-trash-alt"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -2100px; background-size: 34px 2640px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i></button>
 
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-exchange-alt"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -1300px; background-size: 34px 2640px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i></button>
                                                             <button class="btn btn-sm btn-secondary my-1" type="button">Preview</button>
-                                                            <button class="btn btn-sm btn-secondary my-1" type="button"><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary my-1" type="button">Rules<i class="fas fa-sort-down ml-2" style="margin-top: -5px;"></i></button>
 
-                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><span class="mr-1">Reports</span><i class="fas fa-angle-down"></i></button>
-                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-angle-down"></i></button>
-                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><i class="fas fa-grip-lines"></i><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><span class="mr-1">Reports</span><i class="fas fa-sort-down" style="margin-top: -5px;"></i></button>
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -1360px; background-size: 34px 2640px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i><i class="fas fa-sort-down" style="margin-top: -05px"></i></button>
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1 my-1" type="button"><i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: 0px -1865px; background-size: 34px 2640px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i><i class="fas fa-sort-down" style="margin-top: -05px"></i></button>
                                                             <span class="switch switch-secondary float-right mr-1 my-1">
                                                                 <span class="mr-1">View Setup</span>
-                                                                <label>
+
+
+  <div class="col-3">
+   <span class="switch switch-outline switch-dark">
+    <label>
+     <input type="checkbox"  name="select"/>
+     <span></span>
+    </label>
+   </span>
+  </div>
+
+
+                                                                <!--<label>
                                                                     <input type="checkbox" checked="checked" name="select" />
                                                                     <span></span>
-                                                                </label>
+                                                                </label>-->
                                                             </span>
                                                         </div>
-                                                        <div class="col-12">
-                                                        <ul class="nav nav-tabs nav-tabs-line mt-2" style="white-space: nowrap;">
-                                                            <li class="nav-item my-1">
-                                                                <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_1">Resource Center</a>
-                                                            </li>
-                                                            <li class="nav-item my-1">
-                                                                <a class="nav-link bg-light px-2 mx-1 py-1" data-toggle="tab" href="#kt_tab_pane_2">
-                                                                    Campaigns
-                                                                    <div class="alert alert-custom alert-primary fade show px-2 py-1 ml-4 mb-0" role="alert" style="border-radius: 20px;">
-                                                                        <small class="alert-text">16 Selected</small>
-                                                                        <div class="alert-close">
-                                                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                                                <span aria-hidden="true"><i class="ki ki-close"></i></span>
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item my-1">
-                                                                <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_3">Add Sets For 16 Campaigns</a>
-                                                            </li>
-                                                            <li class="nav-item my-1">
-                                                                <a class="nav-link bg-light px-2 mx-1 py-2 active" data-toggle="tab" href="#kt_tab_pane_4">Add For 16 Campaigns</a>
-                                                            </li>
-                                                        </ul>
-                                                        </div>
+                                                       
                                                         </div>
                                                         <div class="tab-content mt-5" id="myTabContent">
                                                             <div class="tab-pane fade" id="kt_tab_pane_1" role="tabpanel" aria-labelledby="kt_tab_pane_1">Tab content 1</div>
@@ -293,33 +328,31 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
         <tr>
             <th></th>
             <th>Off/On</th>
-            <th>Add Name</th>
+            <th>Ad Name</th>
             
             
-            <td>Delievery</td>
-            <td>Set Name</td>
-            <td>Bid Strategy</td>
-            <td>Budget</td>
+            <th>Delievery</th>
+            <th>Set Name</th>
+            <th>Bid Strategy</th>
+            <th>Budget</th>
 
-            <td>Results</td>
-            <td>Impressions</td>
-            <td>Cost Per result</td>
-            <td>Add to Cart</td>
-            <td>Purchases</td>
+            <th>Results</th>
+            <th>Impressions</th>
+            <th>Cost Per result</th>
+            <th>Add to Cart</th>
+            <th>Purchases</th>
 
-            <td>Amount Spent</td>
-            <td>Purchase conversion value</td>
-            <td>Purchase Roas</td>
-            <td>Unique Link Click</td>
-            <td>CPC</td>
+            <th>Amount Spent</th>
+            <th>Purchase conversion value</th>
+            <th>Purchase Roas</th>
+            <th>Unique Link Click</th>
+            <th>CPC</th>
 
-            <td>Company Name</td>
-            <td>Ship Date</td>
-            <td>Status</td>
-            <td>Type</td>
+            <th>Company Name</th>
+            <th>Ship Date</th>
+            <th>Status</th>
+            <th>Type</th>
             <!-- <td>Action</td> -->
-            
-
 
         </tr>
         </thead>
@@ -329,13 +362,20 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
             <% for (var i = 0; i < data.length; i++) { %>
                 <tr>
                     <td> <%= data[i]._id %> </td>
-            <td >
-                <span class="switch switch-sm switch-primary">
-                    <label>
-                        <input type="checkbox" checked="checked" name="select" />
-                        <span></span>
-                    </label>
-                </span>
+           <td >
+                <span class="switch switch-sm">
+    <label>
+     <input type="checkbox" name="select"/>
+     <span></span>
+    </label>
+   </span>
+               <!-- Material switch -->
+<!--               <div class="switch">-->
+<!--                   <label>-->
+<!--                       <input type="checkbox " checked="checked" name="select">-->
+<!--                       <span></span>-->
+<!--                   </label>-->
+<!--               </div>-->
             </td>
             <td style="min-width: 250px">
                 <div class="d-flex align-items-center">
@@ -344,14 +384,14 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
                     </div>
                     <div class="ml-3">
                         <span class="text-dark-75 font-weight-bold line-height-sm d-block pb-2"><%= data[i].name %> 
-                            <small class="d-none"><a href="/update/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-edit"></i></a>
-                                <a href="/delete/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-delete"></i></a>
+                            <small class="d-none"><a href="/update/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"><i class="qo4j1dvg img mr-2" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: -16px -1696px; background-size: 34px 2640px; width: 18px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i></a>
+<!--                                <a href="/delete/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-delete"></i></a>-->
                             </small>
                         </span>
                         <small class="d-none">
-                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-chart-bar"></i> View Charts</a>
-                            <a href="/update/<%= data[i]._id %>" class="text-muted text-hover-primary mr-2"> <i class="icon-sm text-dark-50 flaticon2-edit mr-1"></i>Edit</a>
-                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-copy mr-1"></i>Duplicate</a>
+                            <a href="#" class="text-muted text-hover-primary mr-2 hoverEffect"> <i class="qo4j1dvg img" alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: -16px -1681px; background-size: 34px 2640px; width: 18px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i> <span class="">View Charts</span></a>
+                            <a href="/update/<%= data[i]._id %>" class="text-muted text-hover-primary hoverEffect mr-2"> <i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: -15px -1681px; background-size: 34px 2640px; width: 18px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i><span class="">Edit</span></a>
+                            <a href="#" class="text-muted text-hover-primary hoverEffect mr-2"> <i class="qo4j1dvg img " alt="" data-visualcompletion="css-img" style="background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yc/r/Y50xgBX1V5g.png&quot;); background-position: -15px -1556px; background-size: 34px 2640px; width: 18px; height: 15px; background-repeat: no-repeat; display: inline-block;"></i><span class="">Duplicate</span></a>
                         </small>
                     </div>
                 </div>
@@ -437,7 +477,7 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
         </div>
         <!--end::Quick Panel-->
         <!--begin::Chat Panel-->
-        <div class="modal modal-sticky modal-sticky-bottom-right" id="kt_chat_modal" role="dialog" data-backdrop="false">
+       <div class="modal modal-sticky modal-sticky-bottom-right" id="kt_chat_modal" role="dialog" data-backdrop="false">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <!--begin::Card-->
@@ -742,8 +782,8 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
                 breakpoints: { sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1200 },
                 colors: {
                     theme: {
-                        base: { white: "#ffffff", primary: "#1BC5BD", secondary: "#E5EAEE", success: "#1BC5BD", info: "#6993FF", warning: "#FFA800", danger: "#F64E60", light: "#F3F6F9", dark: "#212121" },
-                        light: { white: "#ffffff", primary: "#1BC5BD", secondary: "#ECF0F3", success: "#C9F7F5", info: "#E1E9FF", warning: "#FFF4DE", danger: "#FFE2E5", light: "#F3F6F9", dark: "#D6D6E0" },
+                        base: { white: "#ffffff", primary: "#1871ed", secondary: "#E5EAEE", success: "#1871ed", info: "#6993FF", warning: "#FFA800", danger: "#F64E60", light: "#F3F6F9", dark: "#212121" },
+                        light: { white: "#ffffff", primary: "#1871ed", secondary: "#ECF0F3", success: "#C9F7F5", info: "#E1E9FF", warning: "#FFF4DE", danger: "#FFE2E5", light: "#F3F6F9", dark: "#D6D6E0" },
                         inverse: { white: "#ffffff", primary: "#ffffff", secondary: "#212121", success: "#ffffff", info: "#ffffff", warning: "#ffffff", danger: "#ffffff", light: "#464E5F", dark: "#ffffff" },
                     },
                     gray: { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" },
@@ -766,7 +806,7 @@ th:first-child , th:nth-child(2) ,th:nth-child(3) {
     </body>
     <!--end::Body-->
     <script type="text/javascript">
-$("tr").hover(
+$("td").hover(
     
   function () {
     $(this).closest('tr').addClass('hoverCustomBg');

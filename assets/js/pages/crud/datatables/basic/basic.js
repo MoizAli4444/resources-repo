@@ -32,7 +32,7 @@ var KTDatatablesBasicBasic = function() {
 
 			headerCallback: function(thead, data, start, end, display) {
 				thead.getElementsByTagName('th')[0].innerHTML = `
-                    <label class="checkbox checkbox-single">
+                    <label class="checkbox checkbox-outline checkbox-single">
                         <input type="checkbox" value="" class="group-checkable checkID"  onchange="checkAllBoxes(this)" />
                         <span></span>
                     </label>`;
@@ -46,7 +46,7 @@ var KTDatatablesBasicBasic = function() {
 					orderable: false,
 					render: function(data, type, full, meta) {
 						return `
-                        <label class="checkbox checkbox-single">
+                        <label class="checkbox checkbox-outline checkbox-single">
                             <input type="checkbox" value="" class="checkable bodyCheckBox" />
                             <span></span>
                         </label>`;
