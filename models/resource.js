@@ -1,6 +1,6 @@
 // dependencies
 const mongoose = require('mongoose');
-const passportLocalMongoose = require('passport-local-mongoose');
+// const passportLocalMongoose = require('passport-local-mongoose');
 // connect to database
 // mongoose.connect('mongodb://localhost/resourcesdb',{
 mongoose.connect('mongodb+srv://moiz1234:moiz1234@cluster0.mcqbb.mongodb.net/resourcesdb',{
@@ -74,6 +74,6 @@ const Resourses = Schema({
     
 });
 // Export Model
-Resourses.plugin(passportLocalMongoose);
+// Resourses.plugin(passportLocalMongoose);
 
 module.exports = mongoose.model('resourcestable', Resourses);
