@@ -12,10 +12,10 @@ var KTDatatablesBasicBasic = function() {
         //     fixedColumns:   {
         //     leftColumns: 3,
         // },
-        // select:         {
-        //   style: 'single'
-        // },
-			// DOM Layout settings
+   //      select:         {
+   //        style: 'multiple'
+   //      },
+			// // DOM Layout settings
 			dom: `<'row'<'col-sm-12'tr>>
 			<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7 dataTables_pager'lp>>`,
 
@@ -29,24 +29,10 @@ var KTDatatablesBasicBasic = function() {
 
 			// Order settings
 			//order: [[1, 'desc']],
-			// "ajax": {
-            //     // url:"/read1",
-            //     url:"http://localhost:8080/resource/datatable/catch",
-            //     type:"GET",
-            //     data:{
-            //         columnsDef:[
-            //             '_id','name','delivery', 'set_name' , 'bid_strategy',
-            //             "budget",'results','impressions','cost_per_result', 'add_to_cart' , 'purchases',
-            //             "amount_spent",'purchase_con_val','purchase_roas','unique_link_click', 'cpc' ,
-            //             "company_name",'ship_date','status','type', 
 
-
-            //         ]
-            //     }
-            // },
 			headerCallback: function(thead, data, start, end, display) {
 				thead.getElementsByTagName('th')[0].innerHTML = `
-                    <label class="checkbox checkbox-single">
+                    <label class="checkbox checkbox-outline checkbox-single">
                         <input type="checkbox" value="" class="group-checkable checkID"  onchange="checkAllBoxes(this)" />
                         <span></span>
                     </label>`;
@@ -60,8 +46,8 @@ var KTDatatablesBasicBasic = function() {
 					orderable: false,
 					render: function(data, type, full, meta) {
 						return `
-                        <label class="checkbox checkbox-single">
-                            <input type="checkbox" value="" class="checkable" onchange="checkBox(this)"/>
+                        <label class="checkbox checkbox-outline checkbox-single">
+                            <input type="checkbox" value="" class="checkable bodyCheckBox" />
                             <span></span>
                         </label>`;
 					},

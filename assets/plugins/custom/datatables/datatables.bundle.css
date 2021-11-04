@@ -912,7 +912,7 @@ div.DTS div.dataTables_scrollBody table {
 }
 
 table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
-  background-color: #0275d8;
+  background-color: #d4e7ff;
 }
 
 table.dataTable.stripe tbody > tr.odd.selected, table.dataTable.stripe tbody > tr.odd > .selected, table.dataTable.display tbody > tr.odd.selected, table.dataTable.display tbody > tr.odd > .selected {
