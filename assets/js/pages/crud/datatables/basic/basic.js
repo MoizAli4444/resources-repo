@@ -169,6 +169,8 @@ var KTDatatablesBasicBasic = function() {
 							'<span class="font-weight-bold text-' + status[data].state + '">' + status[data].title + '</span>';
 					},
 				},
+
+				
 			],
 		});
 
